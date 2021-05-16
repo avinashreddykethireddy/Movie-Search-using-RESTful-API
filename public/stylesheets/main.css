@@ -1,4 +1,19 @@
 body {
-    /* background-image: url('https://image.freepik.com/free-vector/home-movie-background-with-popcorn_1419-1852.jpg'); */
     background-color: red;
+}
+
+.thumbnail img {
+    width : 100%;
+}
+
+.thumbnail {
+    padding : 0;
+}
+
+.thumbnail .caption-full {
+    padding : 9px;
+}
+
+.delete-form {
+    display: inline;
 }
