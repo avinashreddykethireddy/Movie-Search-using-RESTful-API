@@ -14,9 +14,10 @@
                     </div>
                     
                 </div>
-                <p>
-                    <a href="/" class="btn btn-primary">More Info</a>
-                </p>
+                <form action="/moreinfo" method="GET">
+                    <button name="imdbID" type="submit" value="<%= movie["imdbID"] %>" class="btn btn-primary" >More info</button>
+                </form>
+                
             </div>
         <% });%>
     </div>
