@@ -19,7 +19,7 @@ app.get("/result",function(req,res){
             var parsedData = JSON.parse(body);
             console.log(parsedData);
             if(parsedData['Response'] === "False"){
-                res.send("NO PAGE!");
+                res.render("nopage");
             }
             else{        
                 res.render("result",{parsedData:parsedData});
@@ -37,7 +37,7 @@ app.get("/moreinfo",function(req,res){
             var parsedData = JSON.parse(body);
             console.log(parsedData);
             if(parsedData['Response'] === "False"){
-                res.send("NO PAGE!");
+                res.render("nopage");
             }
             else{        
                 res.render("moreinfo",{parsedData:parsedData});
@@ -48,9 +48,9 @@ app.get("/moreinfo",function(req,res){
 
 
 
-// app.listen(process.env.PORT,process.env.IP);
+app.listen(process.env.PORT,process.env.IP);
 
 // to run in your local machine
-app.listen(3000,function(){
-    console.log("Movie app Server started! http://localhost:3000/");
-});
+// app.listen(3000,function(){
+//     console.log("Movie app Server started! http://localhost:3000/");
+// });
