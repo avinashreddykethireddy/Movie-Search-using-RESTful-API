@@ -1,6 +1,46 @@
 <%- include('partials/header'); %>
 
-<h2><%= parsedData["Awards"] %></h2>
 
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="text-center">
+                    <img class="image-responsive" style="text-align:center;" src="<%= parsedData["Poster"] %>">
+                </div>
+                <div class="article">
+                
+                    <div class="caption">
+                        <hr>
+                        <h5 class="heading" > Title         : </h5><h5 class="matter" >     <%= parsedData["Title"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > Year Released : </h5><h5 class="matter" >     <%= parsedData["Released"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > Runtime       : </h5><h5 class="matter" >     <%= parsedData["Runtime"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > Plot          : </h5><p class="matter" >     <%= parsedData["Plot"] %> </p>
+                        <hr>
+                        <h5 class="heading" > Director      : </h5><h5 class="matter" >     <%= parsedData["Director"] %></h5>
+                        <hr>
+                        <h5 class="heading" > Type    : </h5><h5 class="matter" >     <%= parsedData["Type"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > Main Actors   : </h5><h5 class="matter" >     <%= parsedData["Actors"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > Awards        : </h5><h5 class="matter" >     <%= parsedData["Awards"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > imdbRating(Out of 10)  : </h5><h5 class="matter" >    <%= parsedData["imdbRating"] %> </h5>
+                        <hr>
+                        <h5 class="heading" > BoxOffice          :  </h5><h5 class="matter" >       <%= parsedData["BoxOffice"] %> </h5>
+                        <hr>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <%- include('partials/footer'); %>
